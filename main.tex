@@ -1,0 +1,276 @@
+%-------------------------
+% Resume in Latex
+% Author : Aras Gungore
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+\usepackage{multicol}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\usepackage{graphicx}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.5cm, rightmargin=0.5cm]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape Shervin Ghaffari} \\ \vspace{5pt}
+    \small
+    \faEnvelope \thickspace \hspace{.5pt}{\href{mailto:shervinghaffari79@gmail.com}{shervinghaffari79@gmail.com}}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/shervin-ghaffari}{linkedin.com/in/shervin-ghaffari}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/shervinghaffari79}{github.com/shervinghaffari79}
+\end{center}
+
+
+
+%----------- EDUCATION -----------
+
+\section{Education}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \resumeEducationHeading
+      {Amirkabir University of Technology (Tehran Polytechnic)
+      % \normalfont{(Admission rate: 0.09\%)}
+      }{Tehran, Iran} 
+    {B.Sc. in Computer Science;   GPA: 18.28/20}{Sep 2020 \textbf{--} Aug 2024 (expected)}
+    
+  \resumeSubHeadingListEnd
+
+
+
+%----------- SKILLS -----------
+
+\section{Skills}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Languages: }{SQL, Python, Java, HTML, CSS, JavaScript} \\
+        \vspace{3pt}
+        \textbf{Tools: }{PyCharm, IntelliJ IDEA, GitHub, Microsoft Office, Google Colab, LaTeX, MySQL, Git, Tkinter}
+    }}
+  \resumeSubHeadingListEnd
+
+
+\section*{Relevant Coursework}
+
+\begin{itemize}[leftmargin=0.4cm,label=,itemsep=0.1cm] % Adjust the left margin (1cm in this example)
+    \item Artificial Inteligence \& Workshop (Grade: 20/20), Data Structures \& Algorithms (Grade: 18/20), Advanced Programming \& Workshop (Grade: 18.63/20), Design \& Analysis of Algorithms (Grade: 17/20), Principles of Operating Systems (Grade: 19.5/20), Foundation of Combinatorics (Grade: 19/20), Principle of Computer Systems (Grade: 18.5/20), Principles of Software Design \& Workshop (Grade: 15/20), Computer Networks (Grade: 18.5/20)
+\end{itemize}
+
+
+\section{Certifications}
+
+\begin{itemize}[leftmargin=0.4cm,label=,itemsep=-2px]
+    % [leftmargin=0.8cm,label=-,rightmargin=1cm] % Adjust the left margin (1cm in this example)
+    \item \textbf{Natural Language Processing with Classification and Vector Spaces}, Coursera (\href{https://coursera.org/share/784b03bad5b5d2af0fa77490de0e5313}{View Certificate})
+    \item \textbf{Generative AI with Vertex AI: Getting Started}, Coursera (\href{https://coursera.org/share/82863d922b2482bb81e7b168f490c258}{View Certificate})
+    \item \textbf{Generative AI Fundamentals}, Google (\href{https://www.cloudskillsboost.google/public_profiles/3301c790-22a3-44ba-a939-af2d91236ca3/badges/5029696}{View Certificate})
+\end{itemize}
+
+
+\section{Attended Workshops}
+
+\raggedleft
+\leftskip=0.4cm
+\begin{minipage}[t]{0.9\textwidth}
+\textbf{1st Int. Conf. on Artificial Intelligence and Smart Vehicle}, Amirkabir University of Technology, May 2023
+\end{minipage}
+
+\section{Projects}
+    \vspace{3pt}
+    \resumeSubHeadingListStart
+      
+      \resumeProjectHeading
+        {\textbf{Generative AI in E-Commerce: Use-Cases and Implementations}, 2023 (In Progress)}{}
+        % \emph{\href{https://github.com/}{\color{red}GitHub}}
+          \resumeItemListStart
+            \resumeItem{Assessing the use cases of generative AI in e-commerce for tasks such as product review analysis, product category matching, and product description generation.
+
+        \item Investigating different prompt engineering techniques to implement each tasks, while also examining potential risks and challenges of each technique.}
+          \resumeItemListEnd
+
+          \resumeProjectHeading
+        {\textbf{University Campus Food Exchange Bot}, 2022}{}
+          \resumeItemListStart
+            \resumeItem {Created a Telegram bot that allows student to sell their spare food vouchers to other students on campus.}
+            \resumeItem{Bot implementation included an in-app interface to allow users to input food and coupon details, which were saved on MySQL database.}
+          \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% Add more workshops as needed
+
+\section{Fields of Interest}
+
+\begin{tabular}{@{\hspace{-16px}}p{8cm}@{\hspace{1.6cm}}p{8cm}@{}}
+ % Adjust the value (e.g., 10pt) for the desired spacing
+ \\[-30px]
+    \begin{itemize}
+        \item Software Engineering
+        \vspace{-4px}
+        \item Cloud Computing
+    \end{itemize}
+    &
+    \begin{itemize}
+        \item Networking and Distributed Systems
+        \vspace{-4px}
+        \item Artificial Intelligence
+    \end{itemize}\\
+\end{tabular}
+\vspace{-14px}
+\section*{References}
+
+\begin{minipage}{18cm}
+
+\begin{tabular}{@{\hspace{0cm}}p{9cm}@{\hspace{0.6cm}}p{9cm}@{}}
+    \textbf{Mehdi Ghatee}, Professor & \textbf{Farhad Fakhar}, Associate Professor \\
+    Departement of Mathematics and Computer Science & Departement of Mathematics and Computer Science \\
+    Amirkabir University of Technology & Amirkabir University of Technology \\
+    \href{mailto:ghatee@gmail.com}{ghatee@gmail.com} & \href{mailto:f.fakhar@aut.ac.ir}{f.fakhar@aut.ac.ir} \\
+\end{tabular}
+
+    
+\end{minipage}
+
+
+
+
+
+
+
+% \section{References}
+% \begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
+%   \leftskip=-0.1cm\textbf{Mehdi Ghatee}, Professor of Computer Science at Amirkabir University of Technology &  \textbf{Farhad Fakharizadi}, Assoc. Professor of Mathematics and Computer Science at Amirkabir University of Technology
+%   % & \leftskip=-0.1cm \textbf{M.Hassan Shirali-Shahreza} \\
+%   % - Professor & - Associate Professor  \\
+%   % - Computer Science & - Computer Science \\
+%   % \faEnvelope \thickspace ghatee@aut.ac.ir & \faEnvelope \thickspace f.fakhar@aut.ac.ir & \faEnvelope \thickspace hshirali@aut.ac.ir \\
+%   % \faLinkedinSquare \thickspace \href{https://www.linkedin.com/in/mehdi-ghatee}{mehdi-ghatee} & \faLinkedinSquare \thickspace \href{https://www.linkedin.com/in/farhad-fakhar-izadi-51069b54}{farhad-fakhar-izadi} & \faLinkedinSquare \thickspace \href{https://www.linkedin.com/in/m-hassan-shirali-shahreza-7a97b862}{m-hassan-shirali-shahreza} \\
+% \end{tabular}
+
+\end{document}
